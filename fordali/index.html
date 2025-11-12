@@ -188,9 +188,11 @@
     <div class="s-content">
       <div class="s-line line-1">你好~Dali</div>
       <div class="s-line line-2">抱歉没办法写首歌给你</div>
-      <div class="s-line line-3">但我可以送你一片云海</div>
-      <div class="s-line line-4">愿你有一颗向阳而生的心</div>
-      <div class="s-line line-5">与美景常伴的眼睛~</div>
+      <div class="s-line line-3">毕竟，我只是个程序员</div>
+      <div class="s-line line-4">但我可以用代码…</div>
+      <div class="s-line line-5">为你构建这片云海</div>
+      <div class="s-line line-6">愿你有一颗向阳而生的心</div>
+      <div class="s-line line-7">与美景常伴的眼睛~</div>
     </div>
     <style type="text/css">
 
@@ -205,7 +207,7 @@
       @keyframes canvasani
       {
         0% { opacity: 0; }
-        66.6% { opacity: 0; }
+        80% { opacity: 0; }
         100% {opacity: 1;}
       }
 
@@ -217,16 +219,19 @@
         width: 720px;
         margin-left: -360px;
         opacity: 0;
-        color: #666;
+        color: #fff;
+        text-shadow: 0 0 20px rgba(0,0,0,0.3);
       }
 
-      .line-1 { animation: lineani 5s ease-in-out 0s 1 normal; color: #fff; font-size: 102px; top: 50%; }
-      .line-2 { animation: lineani 5s ease-in-out 6s 1 normal; color: #fff; top: 50%; }
-      .line-3 { animation: lineani 5s ease-in-out 12s 1 normal; color: #fff; }
-      .line-4 { animation: lineani 5s ease-in-out 18s 1 normal; }
-      .line-5 { animation: lineani 5s ease-in-out 24s 1 normal; }
+      .line-1 { animation: lineani 5s ease-in-out 0s 1 normal; font-size: 102px; top: 50%; }
+      .line-2 { animation: lineani 5s ease-in-out 6s 1 normal; top: 50%; }
+      .line-3 { animation: lineani 5s ease-in-out 12s 1 normal; top: 50%; }
+      .line-4 { animation: lineani 5s ease-in-out 18s 1 normal; top: 50%; }
+      .line-5 { animation: lineani 10s ease-in-out 24s 1 normal; }
+      .line-6 { animation: lineani 5s ease-in-out 35s 1 normal; }
+      .line-7 { animation: lineani 10s ease-in-out 41s 1 normal; }
       canvas {
-        animation: canvasani 18s linear 0s 1 normal;
+        animation: canvasani 30s linear 0s 1 normal;
       }
     </style>
   </body>
